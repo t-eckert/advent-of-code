@@ -25,4 +25,11 @@ uv run aoc <year> <day> <part:opt>
 
 This is for fun. Not for serious.
 
+> !INFO
+> I created this repo in 2026 and I'm migrating my old solutions into it.
 
+## Solutions
+
+### 2026
+
+- [Day 1](./src/aoc/solutions/year_2026/day_01.py)
