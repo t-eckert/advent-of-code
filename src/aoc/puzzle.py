@@ -34,7 +34,13 @@ def __fetch_from_server(year: int, day: int):
     if session is None:
         raise os.error("Missing env var SESSION")
 
-    resp = httpx.get(INPUT_URL(year, day), cookies={"session": session})
+    resp = httpx.get(
+        INPUT_URL(year, day),
+        cookies={"session": session},
+        headers={
+            "User-Agent": "github.com/t-eckert/aoc by thomas.james.eckert@gmail.com"
+        },
+    )
 
     if resp.status_code != 200:
         raise os.error("Could not fetch from server: " + resp.text)
