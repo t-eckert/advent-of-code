@@ -5,7 +5,9 @@ description = "Advent of Code 2026 solutions"
 readme = "README.md"
 authors = [{ name = "Thomas Eckert", email = "thomas.james.eckert@gmail.com" }]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "httpx>=0.28.1",
+]
 
 [project.scripts]
 advent-2026 = "advent_2026:main"
