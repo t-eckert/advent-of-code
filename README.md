@@ -30,6 +30,6 @@ This is for fun. Not for serious.
 
 ## Solutions
 
-### 2026
+### 2025
 
-- [Day 1](./src/aoc/solutions/year_2026/day_01.py)
+- [Day 1](./src/aoc/solutions/year_2025/day_01.py) ✅✅
