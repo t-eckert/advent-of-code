@@ -1,5 +1,6 @@
 import argparse
 import os
+import time
 
 from aoc import puzzle, solutions
 
@@ -13,6 +14,7 @@ parser.add_argument(
     "day", metavar="int", type=int, help="The day of the puzzle (e.g. 12)"
 )
 parser.add_argument("--part", metavar="int", type=int, help="Part 1 or 2 of the puzzle")
+parser.add_argument("--time", help="Run the solution with a timer", action="store_true")
 
 
 def main():
@@ -23,6 +25,8 @@ def main():
 
     puzzle_input = puzzle.input(args.year, args.day)
 
+    start = time.perf_counter()
+
     if args.part is None:
         print(solution.part_1(puzzle_input))
         print(solution.part_2(puzzle_input))
@@ -30,6 +34,10 @@ def main():
         print(solution.part_1(puzzle_input))
     elif args.part == 2:
         print(solution.part_2(puzzle_input))
+
+    if args.time:
+        elapsed = time.perf_counter() - start
+        print(f"________________\n{elapsed * 1000:.3f} ms")
 
 
 def create_blank_soln_if_none_exists(year: int, day: int):
