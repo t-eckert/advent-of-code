@@ -10,7 +10,6 @@ def part_1(puzzle: str) -> int:
     count = 0
 
     cur = 50
-    print("Begin: ", cur)
     for instruction in puzzle.splitlines():
         cur += turn(instruction)
 
