@@ -33,3 +33,4 @@ This is for fun. Not for serious.
 ### 2025
 
 - [Day 1](./src/aoc/solutions/year_2025/day_01.py) ✅✅
+- [Day 2](./src/aoc/solutions/year_2025/day_02.py) ✅✅
