@@ -30,6 +30,11 @@ This is for fun. Not for serious.
 
 ## Solutions
 
+### 2021
+
+- [Day 1](./src/aoc/solutions/year_2021/day_01.py) ✅✅
+
+
 ### 2025
 
 - [Day 1](./src/aoc/solutions/year_2025/day_01.py) ✅✅
