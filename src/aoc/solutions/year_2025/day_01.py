@@ -1,4 +1,5 @@
 # --- Day 1: Secret Entrance ---
+# adventofcode.com/2025/day/1
 
 
 MIN = 0
